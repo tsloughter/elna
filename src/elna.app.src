@@ -1,0 +1,19 @@
+{application, elna,
+ [{description, "Erlang HTTP 1.1/2 server using Elli and Chatterbox"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib,
+    sasl,
+    elli,
+    chatterbox,
+    acceptor_pool
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, ["Tristan Sloughter"]},
+  {licenses, ["Apache 2"]},
+  {links, [{"Github", "https://github.com/tsloughter/elna"}]}
+ ]}.
