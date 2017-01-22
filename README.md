@@ -8,7 +8,11 @@ Run
 
 ```
 $ rebar3 shell
-> elna:start_link().
+> elna:start_link(#{id => example,
+                    listen_opts => #{port => 8080,
+                                     ssl => true,
+                                     certfile => filename:join(code:priv_dir(elna), "localhost.crt"),
+                                     keyfile => filename:join(code:priv_dir(elna), "localhost.key")}}).
 ```
 
 ```
